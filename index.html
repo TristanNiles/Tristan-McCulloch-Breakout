@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Breakout</h1>
+    <div id = "canvasContainer">
+      <canvas id="projectCanvas" width = 1400px, height = 600px, style = "background: radial-gradient(circle, #f6fefe 0%, #d2f9f9 100%); 
+        display: block; 
+        margin: auto;
+        position: absolute; 
+        margin-left: max(var(--canvasBorder), calc(50% - 700px)); 
+        z-index: 1; 
+        top: var(--canvasBorder);"></canvas>
+    </div>
+    <footer>
+    <div class = "footerElement" id = "speedContainer">
+      <h3 id = 'Speed'>Speed</h3>
+      <label for = "btn1x"><h4>1x</h4>
+        <input type = "radio" id = "btn1x" name = "speedBtn" value = "1x" checked="checked" onclick = "btnSpeed(id, 'btn2x', 'btn3x')">
+      </label><!--
+      --><label for="btn2x"><h4>2x</h4>
+        <input type="radio" id = "btn2x" name="speedBtn" value="2x" onclick = "btnSpeed(id, 'btn1x', 'btn3x', 'btn10x')">
+      </label><!--
+      --><label for="btn3x"><h4>3x</h4>
+        <input type="radio" id="btn3x" name = "speedBtn" value="3x" onclick = "btnSpeed(id, 'btn1x', 'btn2x', 'btn10x')">
+      </label>
+    </div>
+    <div class = "footerElement" id = "scoreboard">
+      <h2>Scoreboard</h2>
+      <span id = 'scoreContainer'>Score:<p id = "score">000</p></span>
+    </div>
+    <div class = "footerElement" id = "heartsContainer">
+      <h3>Lives</h3>
+      <div class = "heart" id = "heart1"></div><!--
+      --><div class = "heart" id = "heart2"></div><!--
+      --><div class = "heart" id = "heart3"></div>
+    </div>
+  </footer>
+  </body>
+  <script src="script.js"></script>
+</HTML>
