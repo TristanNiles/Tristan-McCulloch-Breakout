@@ -22,3 +22,5 @@ Contributors
   > ~Josh Goldstein
   > 
   > ~Tristian Niles
+
+My (Tristan McCulloch's) primary contribution to this project were the CSS and styling JavaScript, and the ball bouncing physics (i.e., the angle at which the ball ends up bouncing).
